@@ -8825,7 +8825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f6c317bdf54da4aba47ce3d02a50c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  totalFood: 15
+  totalFood: 18
   totalGrill: 9
   gridGrill: {fileID: 1055349729}
 --- !u!4 &1003921195
