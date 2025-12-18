@@ -68,4 +68,44 @@ public class GrillStation : MonoBehaviour
         if (free.Count == 0) return null;
         return free[Random.Range(0, free.Count)];
     }
+
+    public FoodSlot GetSlotNull()
+    {
+        for(int i = 0; i< totalSlots.Count; i++)
+        {
+            if (!totalSlots[i].HasFood) return totalSlots[i];
+        }
+        return null;
+    }
+
+    public void OnCheckMerge()
+    {
+        if(this.GetSlotNull() == null)
+        {
+            Debug.Log("merge");
+            if (this.CanMerge())
+            {
+                for(int i = 0 ; i< totalSlots.Count; i++)
+                {
+                    totalSlots[i].onActiveFood(false);
+                }
+            }                            
+        }
+    }
+
+    private bool CanMerge()
+    {
+        string name = totalSlots[0].GetSpriteFood.name;
+
+        for (int i = 0 ; i<totalSlots.Count; i++)
+        {
+            if(totalSlots[i].GetSpriteFood.name != name)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 }
