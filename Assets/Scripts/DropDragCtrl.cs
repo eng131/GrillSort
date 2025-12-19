@@ -5,10 +5,12 @@ using DG.Tweening;
 public class DropDragCtrl : MonoBehaviour
 {
     [SerializeField] private Image imgFoodDrag;
+    [SerializeField] private float timeCheckSuggest;
     private FoodSlot currentFood;
     private FoodSlot cacheFood;
     private bool hasDrag;
     private Vector3 offset;
+    private float countTime;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,8 +22,16 @@ public class DropDragCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        countTime += Time.deltaTime;
+        if(countTime >= timeCheckSuggest)
+        {
+            countTime = 0;
+            GameManager.Instance?.OnCheckAndShake();
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
+            countTime = 0;
             currentFood = Utils.GetRayCastUI<FoodSlot>(Input.mousePosition);
 
             if(currentFood != null && currentFood.HasFood)
@@ -35,7 +45,7 @@ public class DropDragCtrl : MonoBehaviour
 
                 // offset
                 Vector3 mouseWordPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                offset = mouseWordPos - imgFoodDrag.transform.position ;
+                offset = imgFoodDrag.transform.position - mouseWordPos ;
                 
                 currentFood.onActiveFood(false);
             }
@@ -43,10 +53,12 @@ public class DropDragCtrl : MonoBehaviour
 
         if (hasDrag)
         {
+            
             Vector3 mouseWordPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3 foodPos = mouseWordPos + offset;
             foodPos.z = 0;
             imgFoodDrag.transform.position = foodPos;
+            countTime = 0;
 
             FoodSlot slot = Utils.GetRayCastUI<FoodSlot>(Input.mousePosition);
             if (slot != null)
@@ -96,11 +108,12 @@ public class DropDragCtrl : MonoBehaviour
             if(cacheFood != null ) // fill item
             {
                 imgFoodDrag.transform.DOMove(cacheFood.transform.position, 0.2f).OnComplete( ()=>
-                {
+                {  
                     imgFoodDrag.gameObject.SetActive(false);
                     cacheFood.OnSetSlot(currentFood.GetSpriteFood);
                     cacheFood.onActiveFood(true);
                     cacheFood.OnCheckMerge();
+                    currentFood?.OnCheckPrepareTray();
                     cacheFood = null;
                     currentFood = null;
                 });

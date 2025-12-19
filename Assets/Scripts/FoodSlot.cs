@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +25,7 @@ public class FoodSlot : MonoBehaviour
         imgFood.sprite = sprite;
         imgFood.SetNativeSize();
     }
+
     public void onActiveFood(bool active)
     {
         imgFood.gameObject.SetActive(active);
@@ -45,6 +47,29 @@ public class FoodSlot : MonoBehaviour
     public void OnCheckMerge()
     {
         grillCtrl?.OnCheckMerge();
+    }
+
+    public void OnPrepareItem(Image img)
+    {
+        this.OnSetSlot(img.sprite);
+        imgFood.color = normalColor;
+        imgFood.transform.position = img.transform.position;
+        imgFood.transform.localScale = img.transform.localScale;
+        imgFood.transform.localEulerAngles = img.transform.localEulerAngles;
+
+        imgFood.transform.DOLocalMove(Vector3.zero, 0.2f);
+        imgFood.transform.DOScale(Vector3.one, 0.2f);
+        imgFood.transform.DORotate(Vector3.zero, 0.2f);
+    }
+
+    public void OnCheckPrepareTray()
+    {
+        grillCtrl?.OnCheckPrepareTray();
+    }
+
+    public void DoShake()
+    {
+        imgFood.transform.DOShakePosition(0.5f, 10f, 10, 180f);
     }
 
     public FoodSlot GetSlotNull => grillCtrl.GetSlotNull();
