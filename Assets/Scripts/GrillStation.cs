@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GrillStation : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class GrillStation : MonoBehaviour
     private List<TrayItem> totalTrays;
     private List<FoodSlot> totalSlots;
 
+    private Stack<TrayItem> stackTrays = new Stack<TrayItem>();
+
+    public List<FoodSlot> TotalSlots => totalSlots;
 
     private void Awake()
     {
@@ -58,6 +62,8 @@ public class GrillStation : MonoBehaviour
             if(active )
             {
                 totalTrays[i].OnSetFood(remainFood[i]);
+                TrayItem item = totalTrays[i];
+                stackTrays.Push(item);
             }
         }
     }
@@ -78,18 +84,61 @@ public class GrillStation : MonoBehaviour
         return null;
     }
 
+    private bool HasGrillEmpty()
+    {
+        for (int i = 0; i < totalSlots.Count; i++)
+        {
+            if (totalSlots[i].HasFood)
+                return false;
+        }
+
+        return true;
+    }
+
     public void OnCheckMerge()
     {
         if(this.GetSlotNull() == null)
         {
-            Debug.Log("merge");
+            
             if (this.CanMerge())
-            {
-                for(int i = 0 ; i< totalSlots.Count; i++)
+            {  
+                Debug.Log("merge");
+                for(int i = 0 ; i < totalSlots.Count; i++)
                 {
                     totalSlots[i].onActiveFood(false);
                 }
+
+                this.OnPrepareTray();
+                GameManager.Instance?.OnMinusFood();
             }                            
+        }
+    }
+
+    public void OnPrepareTray(bool instant = false)
+    {
+        if(stackTrays.Count > 0)
+        {
+            TrayItem item  = stackTrays.Pop();
+
+            for(int i = 0 ; i< item.FoodList.Count; i++)
+            {
+                Image img = item.FoodList[i];
+                if(img.gameObject.activeInHierarchy)
+                {
+                    totalSlots[i].OnPrepareItem(img);
+                    img.gameObject.SetActive(false);
+                }
+            }
+
+            item.gameObject.SetActive(false);
+        }
+    }
+
+    public void OnCheckPrepareTray()
+    {
+        if (this.HasGrillEmpty())
+        {
+            this.OnPrepareTray();
         }
     }
 

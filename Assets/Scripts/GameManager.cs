@@ -4,6 +4,10 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;  
+    public static GameManager Instance => instance;
+
+    [SerializeField] private int allFood;
     [SerializeField] private int totalFood; 
     [SerializeField] private int totalGrill;
     [SerializeField] private Transform gridGrill;
@@ -18,6 +22,7 @@ public class GameManager : MonoBehaviour
         listGrills = Utils.GetListInChild<GrillStation>(gridGrill);
         Sprite[] loadedSprite = Resources.LoadAll<Sprite>("Items");
         totalSpriteFood = loadedSprite.ToList();
+        instance = this;
     }
 
     void Start()
@@ -29,11 +34,14 @@ public class GameManager : MonoBehaviour
     {
         List<Sprite> takeFood = totalSpriteFood.OrderBy(x => Random.value).Take(totalFood).ToList();
         List<Sprite> useFood = new List<Sprite>();
-        for (int i = 0; i < takeFood.Count; i++)
+
+        for (int i = 0; i < allFood ; i++)
         {
+            int n = i % takeFood.Count;
+
             for (int j = 0; j < 3; j++)
             {
-                useFood.Add(takeFood[i]);
+                useFood.Add(takeFood[n]);
             }
         }
 
@@ -91,4 +99,50 @@ public class GameManager : MonoBehaviour
 
         return result;
     }
+
+    public void OnMinusFood()
+    {
+        --allFood;
+        if(allFood <= 0)
+        {
+            Debug.Log("Level Complete!");
+        }
+    }
+
+    public void OnCheckAndShake()
+    {
+        Dictionary<string, List<FoodSlot>> dictFood = new Dictionary<string, List<FoodSlot>>();
+        foreach(var grill in listGrills)
+        {
+            if (grill.gameObject.activeInHierarchy)
+            {
+                for(int i = 0; i< grill.TotalSlots.Count; i++)
+                {
+                    FoodSlot slot = grill.TotalSlots[i];
+                    if (slot.HasFood)
+                    {
+                        string name = slot.GetSpriteFood.name;
+                        if(!dictFood.ContainsKey(name))
+                        {
+                            dictFood.Add(name, new List<FoodSlot>());
+                        }
+                        dictFood[name].Add(slot);
+                    }
+                }
+            }
+        }
+        foreach(var pair in dictFood)
+        {
+            List<FoodSlot> slots = pair.Value;
+            if(slots.Count >= 3)
+            {
+                for(int i =0; i<3; i++)
+                {
+                    slots[i].DoShake();
+                }
+                return;
+            }
+        }
+    }
+
 }

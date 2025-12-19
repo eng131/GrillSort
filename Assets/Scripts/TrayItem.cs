@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class TrayItem : MonoBehaviour
 {
     private List<Image> foodList ;
+    public List<Image> FoodList => foodList;
 
     private void Awake()
     {
