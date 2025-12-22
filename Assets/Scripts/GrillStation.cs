@@ -1,5 +1,7 @@
-using UnityEngine;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GrillStation : MonoBehaviour
@@ -37,22 +39,56 @@ public class GrillStation : MonoBehaviour
 
         for (int i = 0; i < totalTray - 1; i++)
         {
-            remainFood.Add(new List<Sprite>());
-            int n = Random.Range(0, listFood.Count);
-            remainFood[i].Add(listFood[n]);
-            listFood.RemoveAt(n);
-        }
-
-        while (listFood.Count > 0)
-        {
-            int rans = Random.Range(0, remainFood.Count);
-            if (remainFood[rans].Count < 4)
+            if (listFood.Count > 0)
             {
-                int n = Random.Range(0, listFood.Count);
-                remainFood[rans].Add(listFood[n]);
-                listFood.RemoveAt(n);
+                remainFood.Add(new List<Sprite>());
+                remainFood[i].Add(listFood[0]);
+                listFood.RemoveAt(0);
             }
         }
+        // 111111
+        //while (listFood.Count > 0)
+        //{
+        //    int rans = Random.Range(0, remainFood.Count);
+        //    if (remainFood[rans].Count < 4)
+        //    {
+        //        remainFood[rans].Add(listFood[0]);
+        //        listFood.RemoveAt(0);
+        //    }
+        //}
+
+        // 22222
+        //for (int i = 0; i < remainFood.Count && listFood.Count > 0; i++)
+        //{
+        //    while (remainFood[i].Count < 4 && listFood.Count > 0)
+        //    {
+        //        remainFood[i].Add(listFood[0]);
+        //        listFood.RemoveAt(0);
+        //    }
+        //}
+
+
+        int safe = 0;
+        int maxLoop = 1000;
+
+        while (listFood.Count > 0 && safe < maxLoop)
+        {
+            int rans = Random.Range(0, remainFood.Count);
+
+            if (remainFood[rans].Count < 4)
+            {
+                remainFood[rans].Add(listFood[0]);
+                listFood.RemoveAt(0);
+            }
+
+            safe++;
+        }
+
+        if (safe >= maxLoop)
+        {
+            Debug.LogError("OnInitGrill bị kẹt vòng lặp!");
+        }
+
 
 
         for (int i = 0; i < totalTrays.Count; i++)
@@ -75,13 +111,39 @@ public class GrillStation : MonoBehaviour
         return free[Random.Range(0, free.Count)];
     }
 
+    //public FoodSlot GetSlotNull()
+    //{
+    //    for(int i = 0; i< totalSlots.Count; i++)
+    //    {
+    //        if (!totalSlots[i].HasFood) return totalSlots[i];
+    //    }
+    //    return null;
+    //}
     public FoodSlot GetSlotNull()
     {
-        for(int i = 0; i< totalSlots.Count; i++)
+        FoodSlot tmp = null;
+
+        for (int i = 0; i < totalSlots.Count; i++)
         {
-            if (!totalSlots[i].HasFood) return totalSlots[i];
+            if (!totalSlots[i].HasFood)
+            {
+                if (tmp == null)
+                {
+                    tmp = totalSlots[i];
+                }
+                else
+                {
+                    Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    float x1 = Mathf.Abs(mousePos.x - tmp.transform.position.x);
+                    float x2 = Mathf.Abs(mousePos.x - totalSlots[i].transform.position.x);
+
+                    if (x2 < x1)
+                        tmp = totalSlots[i];
+                }
+            }
         }
-        return null;
+
+        return tmp;
     }
 
     private bool HasGrillEmpty()
@@ -95,42 +157,101 @@ public class GrillStation : MonoBehaviour
         return true;
     }
 
+    //public void OnCheckMerge()
+    //{
+    //    if(this.GetSlotNull() == null)
+    //    {
+            
+    //        if (this.CanMerge())
+    //        {  
+    //            for(int i = 0 ; i < totalSlots.Count; i++)
+    //            {
+    //                totalSlots[i].OnActiveFood(false);
+    //            }
+
+    //            this.OnPrepareTray();
+    //            GameManager.Instance?.OnMinusFood();
+    //        }                            
+    //    }
+    //}
+
     public void OnCheckMerge()
     {
-        if(this.GetSlotNull() == null)
+        if (this.GetSlotNull() == null)
         {
-            
             if (this.CanMerge())
-            {  
-                Debug.Log("merge");
-                for(int i = 0 ; i < totalSlots.Count; i++)
-                {
-                    totalSlots[i].onActiveFood(false);
-                }
+            {
+                Debug.Log("Complete Grill");
 
-                this.OnPrepareTray();
+                StartCoroutine(IEMerge());
+
+                this.OnPrepareTray(false);
                 GameManager.Instance?.OnMinusFood();
-            }                            
+            }
+        }
+
+        IEnumerator IEMerge()
+        {
+            for (int i = 0; i < totalSlots.Count; i++)
+            {
+                totalSlots[i].OnFadeOut();
+                yield return new WaitForSeconds(0.1f);
+            }
         }
     }
 
-    public void OnPrepareTray(bool instant = false)
+    //public void OnPrepareTray(bool instant = false)
+    //{
+    //    if(stackTrays.Count > 0)
+    //    {
+    //        TrayItem item  = stackTrays.Pop();
+
+    //        for(int i = 0 ; i< item.FoodList.Count; i++)
+    //        {
+    //            Image img = item.FoodList[i];
+    //            if(img.gameObject.activeInHierarchy)
+    //            {
+    //                totalSlots[i].OnPrepareItem(img);
+    //                img.gameObject.SetActive(false);
+    //            }
+    //        }
+
+    //        item.gameObject.SetActive(false);
+    //    }
+    //}
+
+    private void OnPrepareTray(bool isNow)
     {
-        if(stackTrays.Count > 0)
+        StartCoroutine(IEPrepare());
+
+        IEnumerator IEPrepare()
         {
-            TrayItem item  = stackTrays.Pop();
+            if (!isNow)
+                yield return new WaitForSeconds(0.95f);
 
-            for(int i = 0 ; i< item.FoodList.Count; i++)
+            if (stackTrays.Count > 0)
             {
-                Image img = item.FoodList[i];
-                if(img.gameObject.activeInHierarchy)
-                {
-                    totalSlots[i].OnPrepareItem(img);
-                    img.gameObject.SetActive(false);
-                }
-            }
+                TrayItem item = stackTrays.Pop();
 
-            item.gameObject.SetActive(false);
+                for (int i = 0; i < item.FoodList.Count; i++)
+                {
+                    Image img = item.FoodList[i];
+                    if (img.gameObject.activeInHierarchy)
+                    {
+                        totalSlots[i].OnPrepareItem(img);
+                        img.gameObject.SetActive(false);
+                        yield return new WaitForSeconds(0.1f);
+                    }
+                }
+
+                CanvasGroup canvas = item.GetComponent<CanvasGroup>();
+                canvas.DOFade(0f, 0.5f).OnComplete(() =>
+                {
+                    item.gameObject.SetActive(false);
+                    canvas.alpha = 1f;
+                });
+
+            }
         }
     }
 
@@ -138,7 +259,7 @@ public class GrillStation : MonoBehaviour
     {
         if (this.HasGrillEmpty())
         {
-            this.OnPrepareTray();
+            this.OnPrepareTray(true);
         }
     }
 

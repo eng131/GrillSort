@@ -1,0 +1,12 @@
+smoke 2.png
+size:524,308
+filter:Linear,Linear
+pma:true
+1,1
+bounds:2,96,208,345
+rotate:90
+1.2
+bounds:349,13,173,291
+1.3
+bounds:2,2,92,241
+rotate:90

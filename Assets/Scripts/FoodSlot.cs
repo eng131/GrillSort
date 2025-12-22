@@ -24,9 +24,10 @@ public class FoodSlot : MonoBehaviour
         imgFood.gameObject.SetActive(true);
         imgFood.sprite = sprite;
         imgFood.SetNativeSize();
+
     }
 
-    public void onActiveFood(bool active)
+    public void OnActiveFood(bool active)
     {
         imgFood.gameObject.SetActive(active);
         imgFood.color = normalColor;
@@ -34,13 +35,13 @@ public class FoodSlot : MonoBehaviour
 
     public void OnFadeFood()
     {
-        this.onActiveFood(true);
+        this.OnActiveFood(true);
         imgFood.color = fadeColor;
     }
 
     public void OnHideFood()
     {
-        this.onActiveFood(false);
+        this.OnActiveFood(false);
         imgFood.color = normalColor;
     }
 
@@ -57,15 +58,25 @@ public class FoodSlot : MonoBehaviour
         imgFood.transform.localScale = img.transform.localScale;
         imgFood.transform.localEulerAngles = img.transform.localEulerAngles;
 
-        imgFood.transform.DOLocalMove(Vector3.zero, 0.2f);
-        imgFood.transform.DOScale(Vector3.one, 0.2f);
-        imgFood.transform.DORotate(Vector3.zero, 0.2f);
+        imgFood.transform.DOLocalMove(Vector3.zero, 0.6f).SetEase(Ease.OutBack);
+        imgFood.transform.DOScale(Vector3.one, 0.6f);
+        imgFood.transform.DORotate(Vector3.zero, 0.6f);
     }
 
     public void OnCheckPrepareTray()
     {
         grillCtrl?.OnCheckPrepareTray();
     }
+
+    public void OnFadeOut()
+    {
+        imgFood.transform.DOLocalMoveY(100f, 0.6f).OnComplete(() => {
+            this.OnActiveFood(false);
+            imgFood.transform.localPosition = Vector3.zero;
+        });
+        imgFood.DOColor(new Color(1f, 1f, 1f, 0f), 0.6f);
+    }
+
 
     public void DoShake()
     {

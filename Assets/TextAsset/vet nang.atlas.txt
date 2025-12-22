@@ -1,0 +1,11 @@
+vet nang.png
+size:1208,584
+filter:Linear,Linear
+pma:true
+1
+bounds:835,96,368,485
+2
+bounds:2,2,579,831
+rotate:90
+af_1
+bounds:835,26,68,68

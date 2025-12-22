@@ -11,6 +11,7 @@ public class DropDragCtrl : MonoBehaviour
     private bool hasDrag;
     private Vector3 offset;
     private float countTime;
+    private float timeAtClick;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,24 +33,55 @@ public class DropDragCtrl : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             countTime = 0;
-            currentFood = Utils.GetRayCastUI<FoodSlot>(Input.mousePosition);
+            FoodSlot tapSlot = Utils.GetRayCastUI<FoodSlot>(Input.mousePosition);
 
-            if(currentFood != null && currentFood.HasFood)
+            if (tapSlot != null)
             {
-                hasDrag = true;
-                cacheFood = currentFood;
-                imgFoodDrag.gameObject.SetActive(true);
-                imgFoodDrag.sprite = currentFood.GetSpriteFood;
-                imgFoodDrag.SetNativeSize();
-                imgFoodDrag.transform.position = currentFood.transform.position;
+                if (tapSlot.HasFood)
+                {
+                    hasDrag = true;
+                    currentFood?.OnActiveFood(true);
+                    cacheFood = currentFood = tapSlot;
+                    // sprite food cho dummy 
+                    imgFoodDrag.gameObject.SetActive(true);
+                    imgFoodDrag.sprite = currentFood.GetSpriteFood;
+                    imgFoodDrag.SetNativeSize();
+                    imgFoodDrag.transform.position = currentFood.transform.position;            
 
-                // offset
-                Vector3 mouseWordPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                offset = imgFoodDrag.transform.position - mouseWordPos ;
-                
-                currentFood.onActiveFood(false);
+                    //tinh offset
+                    Vector3 mouseWordPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    offset = currentFood.transform.position - mouseWordPos;
+                    offset.z = 0f;
+
+                    currentFood.OnActiveFood(false);
+                    imgFoodDrag.transform.DOScale(Vector3.one * 1.2f, 0.2f);
+                }
+                else
+                {
+                    if (currentFood != null) // di chuyen item vua slect toi vi tri nay
+                    {
+                        imgFoodDrag.transform.DOMove(tapSlot.transform.position, 0.4f).OnComplete(() => {
+                            tapSlot.OnSetSlot(currentFood.GetSpriteFood);
+                            tapSlot.OnActiveFood(true);
+                            tapSlot.OnCheckMerge();
+                            currentFood?.OnCheckPrepareTray();
+                            currentFood = null;
+                            imgFoodDrag.gameObject.SetActive(false);
+                        });
+                        imgFoodDrag.transform.DOScale(Vector3.one, 0.4f);
+                    }
+                }
             }
+            else
+            {
+                currentFood?.OnActiveFood(true);
+                currentFood = null;
+                imgFoodDrag.gameObject.SetActive(false);
+            }
+
+            timeAtClick = Time.time;
         }
+    
 
         if (hasDrag)
         {
@@ -105,32 +137,42 @@ public class DropDragCtrl : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && hasDrag)
         {
-            if(cacheFood != null ) // fill item
+            if (Time.time - timeAtClick < 0.15f) //click
             {
-                imgFoodDrag.transform.DOMove(cacheFood.transform.position, 0.2f).OnComplete( ()=>
-                {  
-                    imgFoodDrag.gameObject.SetActive(false);
-                    cacheFood.OnSetSlot(currentFood.GetSpriteFood);
-                    cacheFood.onActiveFood(true);
-                    cacheFood.OnCheckMerge();
-                    currentFood?.OnCheckPrepareTray();
-                    cacheFood = null;
-                    currentFood = null;
-                });
+
             }
             else
             {
-                imgFoodDrag.transform.DOMove(currentFood.transform.position, 0.3f).OnComplete(() =>
+                if (cacheFood != null) //fill item
                 {
-                    imgFoodDrag.gameObject.SetActive(false);
-                    currentFood.onActiveFood(true);
-                });
+                    imgFoodDrag.transform.DOMove(cacheFood.transform.position, 0.2f).OnComplete(() =>
+                    {
+                        imgFoodDrag.gameObject.SetActive(false);
+                        cacheFood.OnSetSlot(currentFood.GetSpriteFood);
+                        cacheFood.OnActiveFood(true);
+                        cacheFood.OnCheckMerge();
+                        currentFood?.OnCheckPrepareTray();
+                        cacheFood = null;
+                        currentFood = null;
+                    });
+
+                    imgFoodDrag.transform.DOScale(Vector3.one, 0.22f);
+                }
+                else //tro ve vi tri ban dau
+                {
+                    imgFoodDrag.transform.DOMove(currentFood.transform.position, 0.3f).OnComplete(() =>
+                    {
+                        imgFoodDrag.gameObject.SetActive(false);
+                        currentFood.OnActiveFood(true);
+                    });
+
+                    imgFoodDrag.transform.DOScale(Vector3.one, 0.3f);
+                }
             }
             hasDrag = false;
 
         }
     }
-
     private void OnClearCacheSlot()
     {
         if (cacheFood != null && cacheFood.GetInstanceID() != currentFood.GetInstanceID() )

@@ -1,0 +1,14 @@
+banhtago.png
+size:1008,2332
+filter:Linear,Linear
+pma:true
+1
+bounds:2,1569,964,759
+2
+bounds:2,667,486,900
+3
+bounds:490,2,513,736
+4
+bounds:490,740,475,827
+5
+bounds:2,42,456,623

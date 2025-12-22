@@ -1,0 +1,8 @@
+Group 68.png
+size:440,368
+filter:Linear,Linear
+pma:true
+Group 66
+bounds:2,2,435,136
+Group 67
+bounds:2,140,381,225

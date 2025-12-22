@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: 3f4c900151bfaee43ad387a50014fac6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7391751666428741833
+    second: ngoi ban an nuong_0
+  - first:
+      213: -6857510802057665444
+    second: ngoi ban an nuong_1
+  - first:
+      213: -7284677678823966973
+    second: ngoi ban an nuong_2
+  - first:
+      213: 9170405411386101035
+    second: ngoi ban an nuong_3
+  - first:
+      213: -504179840484657407
+    second: ngoi ban an nuong_4
+  - first:
+      213: -4512034020458768045
+    second: ngoi ban an nuong_5
+  - first:
+      213: 4372563602188661208
+    second: ngoi ban an nuong_6
+  - first:
+      213: -3052361756312758575
+    second: ngoi ban an nuong_7
+  - first:
+      213: -6815102193656422917
+    second: ngoi ban an nuong_8
+  - first:
+      213: 1536763548101511237
+    second: ngoi ban an nuong_9
+  - first:
+      213: -7336545199599500902
+    second: ngoi ban an nuong_10
+  - first:
+      213: -1070901126370652748
+    second: ngoi ban an nuong_11
+  - first:
+      213: -1251057515695634422
+    second: ngoi ban an nuong_12
+  - first:
+      213: 4261628114753603543
+    second: ngoi ban an nuong_13
+  - first:
+      213: -2344161607282345052
+    second: ngoi ban an nuong_14
+  - first:
+      213: -6784603467142372386
+    second: ngoi ban an nuong_15
+  - first:
+      213: 550195467698833534
+    second: ngoi ban an nuong_16
+  - first:
+      213: 5754953250251518304
+    second: ngoi ban an nuong_17
+  - first:
+      213: -1775720373485393280
+    second: ngoi ban an nuong_18
+  - first:
+      213: -639818916652175981
+    second: ngoi ban an nuong_19
+  - first:
+      213: -5968100002157657914
+    second: ngoi ban an nuong_20
+  - first:
+      213: 5390521006243706272
+    second: ngoi ban an nuong_21
+  - first:
+      213: -4704414711960671326
+    second: ngoi ban an nuong_22
+  - first:
+      213: 2841365368440867173
+    second: ngoi ban an nuong_23
+  - first:
+      213: -4180875884912583840
+    second: ngoi ban an nuong_24
+  - first:
+      213: 3427879968661457995
+    second: ngoi ban an nuong_25
+  - first:
+      213: 6910007925034992657
+    second: ngoi ban an nuong_26
+  - first:
+      213: -2058759252300883608
+    second: ngoi ban an nuong_27
+  - first:
+      213: 1623657724575683961
+    second: ngoi ban an nuong_28
+  - first:
+      213: -8414808364466844771
+    second: ngoi ban an nuong_29
+  - first:
+      213: -7632464682338992350
+    second: ngoi ban an nuong_30
+  - first:
+      213: 5559001450632122154
+    second: ngoi ban an nuong_31
+  - first:
+      213: -7348170621849505447
+    second: ngoi ban an nuong_32
+  - first:
+      213: 8593277781032742603
+    second: ngoi ban an nuong_33
+  - first:
+      213: 737792663934527489
+    second: ngoi ban an nuong_34
+  - first:
+      213: -4750903033769550348
+    second: ngoi ban an nuong_35
+  - first:
+      213: 3739426178540402046
+    second: ngoi ban an nuong_36
+  - first:
+      213: 5387687987764842204
+    second: ngoi ban an nuong_37
+  - first:
+      213: -3371127697794224500
+    second: ngoi ban an nuong_38
+  - first:
+      213: 5456466657952910704
+    second: ngoi ban an nuong_39
+  - first:
+      213: 5146768779878662441
+    second: ngoi ban an nuong_40
+  - first:
+      213: 5780046309097481490
+    second: ngoi ban an nuong_41
+  - first:
+      213: -8376375965082670842
+    second: ngoi ban an nuong_42
+  - first:
+      213: 8154596380158726199
+    second: ngoi ban an nuong_43
+  - first:
+      213: 2212866325199952890
+    second: ngoi ban an nuong_44
+  - first:
+      213: -610145220736402286
+    second: ngoi ban an nuong_45
+  - first:
+      213: -267398716962233533
+    second: ngoi ban an nuong_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ngoi ban an nuong_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 652
+        width: 231
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737fc96c5093b6990800000000000000
+      internalID: -7391751666428741833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 675
+        width: 93
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54e2f7124a35d0a0800000000000000
+      internalID: -6857510802057665444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 653
+        width: 180
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307fa7a3f30a7ea90800000000000000
+      internalID: -7284677678823966973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 686
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d0dff7223d34f70800000000000000
+      internalID: 9170405411386101035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_4
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 733
+        width: 166
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107bff83b1bc009f0800000000000000
+      internalID: -504179840484657407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 720
+        width: 135
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359d314d6f80261c0800000000000000
+      internalID: -4512034020458768045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_6
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 710
+        width: 140
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1f14aed677eac30800000000000000
+      internalID: 4372563602188661208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 697
+        width: 126
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d69dfc9725d3a5d0800000000000000
+      internalID: -3052361756312758575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_8
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 685
+        width: 118
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd9f1fa9a4eb61a0800000000000000
+      internalID: -6815102193656422917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 733
+        width: 169
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5480c5c0e4ea35510800000000000000
+      internalID: 1536763548101511237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_10
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 733
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91464bf20b5f2a90800000000000000
+      internalID: -7336545199599500902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_11
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 734
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd8c1579156321f0800000000000000
+      internalID: -1070901126370652748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_12
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 739
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08016f51d953aee0800000000000000
+      internalID: -1251057515695634422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_13
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 669
+        width: 169
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7c4b8f038542b30800000000000000
+      internalID: 4261628114753603543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_14
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 739
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abb3d5207dd77fd0800000000000000
+      internalID: -2344161607282345052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_15
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 686
+        width: 158
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3681fc71f38d1a0800000000000000
+      internalID: -6784603467142372386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_16
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 551
+        width: 130
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e780831ecdfa2a700800000000000000
+      internalID: 550195467698833534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_17
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 551
+        width: 154
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061b8347d73bddf40800000000000000
+      internalID: 5754953250251518304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_18
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 572
+        width: 175
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08aaafd7abf5b57e0800000000000000
+      internalID: -1775720373485393280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_19
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 571
+        width: 102
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d2f50d518ee17f0800000000000000
+      internalID: -639818916652175981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_20
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 567
+        width: 180
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0826b1bac0d2da0800000000000000
+      internalID: -5968100002157657914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_21
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 567
+        width: 156
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5ff638b4afeca40800000000000000
+      internalID: 5390521006243706272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_22
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 567
+        width: 94
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab66799ebf86beb0800000000000000
+      internalID: -4704414711960671326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_23
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 656
+        width: 186
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569c3079fbe8e6720800000000000000
+      internalID: 2841365368440867173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_24
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 533
+        width: 191
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bd9cda88b8af5c0800000000000000
+      internalID: -4180875884912583840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_25
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 519
+        width: 188
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c4eb87ba6429f20800000000000000
+      internalID: 3427879968661457995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_26
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 553
+        width: 115
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11448d6d89745ef50800000000000000
+      internalID: 6910007925034992657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 278
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8699e882e51dd63e0800000000000000
+      internalID: -2058759252300883608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 546
+        width: 234
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97517261914688610800000000000000
+      internalID: 1623657724575683961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_29
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 351
+        width: 321
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bc7f64068983b80800000000000000
+      internalID: -8414808364466844771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 546
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f38785fc9041690800000000000000
+      internalID: -7632464682338992350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_31
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 351
+        width: 251
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f0fc2dd5a852d40800000000000000
+      internalID: 5559001450632122154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_32
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 351
+        width: 240
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951f2bf60cd060a90800000000000000
+      internalID: -7348170621849505447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 351
+        width: 231
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcea6badc94714770800000000000000
+      internalID: 8593277781032742603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_34
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 351
+        width: 231
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108e4b3d48a2d3a00800000000000000
+      internalID: 737792663934527489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_35
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 376
+        width: 88
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd17d5bcd6611eb0800000000000000
+      internalID: -4750903033769550348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_36
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 351
+        width: 192
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7572bb0c4c15e330800000000000000
+      internalID: 3739426178540402046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_37
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 376
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdecc5ffda9e4ca40800000000000000
+      internalID: 5387687987764842204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_38
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 263
+        width: 229
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eae7848395731d0800000000000000
+      internalID: -3371127697794224500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_39
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 422
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07dcb0c048349bb40800000000000000
+      internalID: 5456466657952910704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_40
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 0
+        width: 422
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9210db1cfeefc6740800000000000000
+      internalID: 5146768779878662441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_41
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 0
+        width: 260
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215201f7e79d63050800000000000000
+      internalID: 5780046309097481490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_42
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 263
+        width: 49
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609a020907221cb80800000000000000
+      internalID: -8376375965082670842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 144
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7301c0ee332fa2170800000000000000
+      internalID: 8154596380158726199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_44
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 21
+        width: 145
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb97f0d23ea5be10800000000000000
+      internalID: 2212866325199952890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_45
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 21
+        width: 145
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cba9887245887f0800000000000000
+      internalID: -610145220736402286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngoi ban an nuong_46
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 21
+        width: 145
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343221e98420a4cf0800000000000000
+      internalID: -267398716962233533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ngoi ban an nuong_0: -7391751666428741833
+      ngoi ban an nuong_1: -6857510802057665444
+      ngoi ban an nuong_10: -7336545199599500902
+      ngoi ban an nuong_11: -1070901126370652748
+      ngoi ban an nuong_12: -1251057515695634422
+      ngoi ban an nuong_13: 4261628114753603543
+      ngoi ban an nuong_14: -2344161607282345052
+      ngoi ban an nuong_15: -6784603467142372386
+      ngoi ban an nuong_16: 550195467698833534
+      ngoi ban an nuong_17: 5754953250251518304
+      ngoi ban an nuong_18: -1775720373485393280
+      ngoi ban an nuong_19: -639818916652175981
+      ngoi ban an nuong_2: -7284677678823966973
+      ngoi ban an nuong_20: -5968100002157657914
+      ngoi ban an nuong_21: 5390521006243706272
+      ngoi ban an nuong_22: -4704414711960671326
+      ngoi ban an nuong_23: 2841365368440867173
+      ngoi ban an nuong_24: -4180875884912583840
+      ngoi ban an nuong_25: 3427879968661457995
+      ngoi ban an nuong_26: 6910007925034992657
+      ngoi ban an nuong_27: -2058759252300883608
+      ngoi ban an nuong_28: 1623657724575683961
+      ngoi ban an nuong_29: -8414808364466844771
+      ngoi ban an nuong_3: 9170405411386101035
+      ngoi ban an nuong_30: -7632464682338992350
+      ngoi ban an nuong_31: 5559001450632122154
+      ngoi ban an nuong_32: -7348170621849505447
+      ngoi ban an nuong_33: 8593277781032742603
+      ngoi ban an nuong_34: 737792663934527489
+      ngoi ban an nuong_35: -4750903033769550348
+      ngoi ban an nuong_36: 3739426178540402046
+      ngoi ban an nuong_37: 5387687987764842204
+      ngoi ban an nuong_38: -3371127697794224500
+      ngoi ban an nuong_39: 5456466657952910704
+      ngoi ban an nuong_4: -504179840484657407
+      ngoi ban an nuong_40: 5146768779878662441
+      ngoi ban an nuong_41: 5780046309097481490
+      ngoi ban an nuong_42: -8376375965082670842
+      ngoi ban an nuong_43: 8154596380158726199
+      ngoi ban an nuong_44: 2212866325199952890
+      ngoi ban an nuong_45: -610145220736402286
+      ngoi ban an nuong_46: -267398716962233533
+      ngoi ban an nuong_5: -4512034020458768045
+      ngoi ban an nuong_6: 4372563602188661208
+      ngoi ban an nuong_7: -3052361756312758575
+      ngoi ban an nuong_8: -6815102193656422917
+      ngoi ban an nuong_9: 1536763548101511237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     private List<GrillStation> listGrills;
     private float avgTray;
-
     private List<Sprite> totalSpriteFood;
 
     private void Awake()
@@ -45,11 +44,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < useFood.Count; i++)
-        {
-            int rand = Random.Range(i, useFood.Count);
-            (useFood[i], useFood[rand]) = (useFood[rand], useFood[i]);
-        }
+        //for (int i = 0; i < useFood.Count; i++)
+        //{
+        //    int rand = Random.Range(i, useFood.Count);
+        //    (useFood[i], useFood[rand]) = (useFood[rand], useFood[i]);
+        //}
 
         avgTray = Random.Range(1.5f, 2f);
         int totalTray = Mathf.RoundToInt(useFood.Count / avgTray);

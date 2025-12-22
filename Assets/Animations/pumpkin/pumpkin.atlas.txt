@@ -1,0 +1,13 @@
+pumpkin.png
+size:604,232
+filter:Linear,Linear
+pma:true
+body
+bounds:2,2,267,225
+eye_1
+bounds:477,61,166,125
+rotate:90
+eye_2
+bounds:271,64,204,163
+shadow
+bounds:271,18,250,41
