@@ -42,6 +42,17 @@ public class TrayItem : MonoBehaviour
         }
     }
 
+    public bool IsEmpty()
+    {
+        for (int i = 0; i < foodList.Count; i++)
+        {
+            if (foodList[i].gameObject.activeInHierarchy)
+                return false;
+        }
+        return true;
+    }
+
+
     private Image RandomSlot()
     {
         List<Image> freeSlots = foodList.FindAll(x => !x.gameObject.activeInHierarchy);

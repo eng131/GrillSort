@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5d4e4fc13f5b746a4b6ab15390d33b, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  difficulty: 0
+  levelSeconds: 90
+  levelIndex: 1
+  boardData: {fileID: 11400000, guid: 5d2078df6d40a40409fac04413782cd5, type: 2}
+  spawnWareData: {fileID: 11400000, guid: 62b4e38e084ba5344a9998aadec385c9, type: 2}
+  missions: []

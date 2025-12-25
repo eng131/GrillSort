@@ -23,6 +23,9 @@ public class DropDragCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameStateManager.Instance.CurrentState != GameState.Playing)
+            return;
+
         countTime += Time.deltaTime;
         if(countTime >= timeCheckSuggest)
         {

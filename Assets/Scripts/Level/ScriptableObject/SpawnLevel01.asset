@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829c11d2b2ee8814e9c55bbbe0da7492, type: 3}
+  m_Name: SpawnLevel01
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnWareDataSO
+  uniqueFoodCount: 15
+  totalPattern: 20
+  listWareSet:
+  - set_1
+  listLayerData:
+  - numberEmptySlot: 12
+    match3Ratio: 50.3
+    match2Ratio: 43
+    match1Ratio: 52.1
+  numberIce: 0
+  maxNumberIceInTray: 0
+  numberTrayNoIce: 9
+  numberHidden: 0
+  maxNumberHiddenInTray: 0
